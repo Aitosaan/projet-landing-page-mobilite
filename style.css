@@ -3,9 +3,11 @@
     --bleuFonce: #0F0E48;
     --bleuMedium: #2A46E6;
     --blanc: #F7F8FC;
+    /* Pour le nommage ça s'écrit avec des tirets entre les mots : --ombre-externe */
     --ombreExterne: 0 0 10px #00000025;
     --ombreInterne: 0 0 10px #00000025 inset;
     --policeTitres: "Kufam", sans-serif;
+    /* titre-h1 au lieu de titreH1 (à corriger pour les autres aussi) */
     --titreH1: 2em;
     --titreH2: 1.6em;
     --titreH3: 1.3em;
