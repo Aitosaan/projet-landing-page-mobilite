@@ -8,6 +8,7 @@
     --ombre-externe: 0 0 10px #00000025;
     --ombre-interne: 0 0 10px #00000025 inset;
     --police-principale: "Kufam", sans-serif;
+    /* TO DO : utilise l'unité rem plutôt que em */
     --titre-h1: 2em;
     --titre-h2: 1.6em;
     --titre-h3: 1.3em;
@@ -51,6 +52,9 @@ a {
     background-color: var(--blanc);
 }
 
+/* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
+En mettant, header au dessus de toutes les classes spécifiques au header etc. */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -62,6 +66,7 @@ header {
 }
 
 header * {
+    /* TO DO : c'est utile ça ? */
     height: 100%;
 }
 
@@ -105,6 +110,7 @@ h2 {
     font-size: var(--titre-h2);
 }
 
+/* TO DO : c'est pour tous les h3 du site ? */
 #problematique h3 {
     font-size: 3em;
 }
