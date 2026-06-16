@@ -1,0 +1,27 @@
+:root {
+    --marges: 20px;
+    --bleuFonce: #0F0E48;
+    --bleuMedium: #2A46E6;
+    --blanc: #F7F8FC;
+    --ombreExterne: 0 0 10px #00000025;
+    --ombreInterne: 0 0 10px #00000025 inset;
+    --policeTitres: "Kufam", sans-serif;
+    --titreH1: 2em;
+    --titreH2: 1.6em;
+    --titreH3: 1.3em;
+    --texte: 1.1em;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--policeTitres);
+}
+
+h1 {
+    font-size: var(--titreH1);
+}
