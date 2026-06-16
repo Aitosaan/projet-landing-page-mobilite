@@ -1,16 +1,16 @@
 :root {
+    --taille-nav: 80px;
     --marges: 20px;
-    --bleuFonce: #0F0E48;
-    --bleuMedium: #2A46E6;
+    --separ-section: var(--marges) * 4;
+    --bleu-fonce: #0F0E48;
+    --bleu-medium: #2A46E6;
     --blanc: #F7F8FC;
-    /* Pour le nommage ça s'écrit avec des tirets entre les mots : --ombre-externe */
-    --ombreExterne: 0 0 10px #00000025;
-    --ombreInterne: 0 0 10px #00000025 inset;
-    --policeTitres: "Kufam", sans-serif;
-    /* titre-h1 au lieu de titreH1 (à corriger pour les autres aussi) */
-    --titreH1: 2em;
-    --titreH2: 1.6em;
-    --titreH3: 1.3em;
+    --ombre-externe: 0 0 10px #00000025;
+    --ombre-interne: 0 0 10px #00000025 inset;
+    --police-principale: "Kufam", sans-serif;
+    --titre-h1: 2em;
+    --titre-h2: 1.6em;
+    --titre-h3: 1.3em;
     --texte: 1.1em;
 }
 
@@ -21,9 +21,91 @@
 }
 
 body {
-    font-family: var(--policeTitres);
+    background-color: var(--blanc);
+    font-family: var(--police-principale);
+    font-size: var(--texte);
+    color: var(--bleu-fonce);
+}
+
+a {
+    text-decoration: none;
+    color: var(--bleu-medium);
+}
+
+.cta {
+    padding: calc(var(--marges) / 2) var(--marges);
+    box-shadow: var(--ombre-externe);
+    transition: .4s ease;
+}
+
+.cta:hover {
+    box-shadow: var(--ombre-interne);
+}
+
+.cta-principal {
+    background-color: var(--bleu-medium);
+    color: var(--blanc);
+}
+
+.cta-second {
+    background-color: var(--blanc);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: var(--taille-nav);
+    padding: 0 var(--marges);
+    box-shadow: var(--ombre-externe);
+}
+
+header * {
+    height: 100%;
+}
+
+header img {
+    height: 40px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: end;
+    gap: var(--marges);
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 96vw;
+}
+
+#hero {
+    height: calc(100vh - var(--taille-nav));
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
 }
 
 h1 {
-    font-size: var(--titreH1);
+    font-size: var(--titre-h1);
 }
+
+h2 {
+    font-size: var(--titre-h2);
+}
+
+#problematique h3 {
+    font-size: 3em;
+}
+

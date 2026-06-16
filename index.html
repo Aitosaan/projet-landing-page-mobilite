@@ -12,40 +12,67 @@
 <body>
     <header>
         <img
-            alt="logo"
-            src="assets/SerenIA-logo.png">
+            alt="Logo SerenIA"
+            src="assets/SerenIA-logo.png" />
         <nav>
             <ul>
-                <li>Vos difficultés</li>
-                <li>Notre solution</li>
-                <li>Avis utilisateurs</li>
-                <!-- Il manque un <li> autour du <a> pour qu'il soit dans le <ul>, sinon il faut sortir le <a> du <ul> -->
-                <a href="">Téléchargez l’app</a>
+                <li>
+                    <a href="">Vos difficultés</a>
+                </li>
+                <li>
+                    <a href="">Notre solution</a>
+                </li>
+                <li>
+                    <a href="">Vos avis</a>
+                </li>
+                <li>
+                    <a href="">Nos partenaires</a>
+                </li>
+                <li>
+                    <a class="cta cta-principal" href="">Téléchargez l’app</a>
+                </li>
             </ul>
         </nav>
     </header>
     <section id="hero">
         <div class="container">
-            <h1>Nos voitures sont autonomes pour que vous le soyez aussi</h1>
-            <!-- Pourquoi il y a un h2 ici ?? C'est un paragraphe nan pas un titre -->
-            <h2>Réservez vos trajets en voiture autonome avec simplicité grâce à notre application mobile pensée pour vos déplacements quotidiens.</h2>   
+            <h1>Nos voitures sont autonomes pour que vous le soyiez aussi</h1>
+            <p>Réservez vos trajets en voiture autonome avec simplicité grâce à notre application mobile pensée pour vos déplacements quotidiens.</p>   
         </div>
         <div>
-            <a href="">Téléchargez gratuitement notre application<a>
+            <a class="cta cta-principal" href="">Téléchargez gratuitement notre application<a>
         </div>  
     </section>
-    
-    <!-- Attention à l'orthographe pour que tout le monde puisse travailler ensemble : engagEment -->
-    <section id="engagment">
-        <div class="cardBleuF"></div>
-        <div class="cardBleuC"></div>
-        <div class="cardblan">
-            <h2>Votre autonomie compte</h2>
-            <p>En quelques clics, voyagez simplement, confortablement et en toute sécurité.<p>
-            <a href="">Téléchargez gratuitement notre application</a>
+    <main class="container">
+        <section id="problematique">
+            <h2>L’âge a un impact sur la mobilité</h2>
+            <p>Avec l’âge et les problèmes de santé qui peuvent en découler, les personnes âgées rencontrent hélas des obstacles dans leur autonomie de tous les jours. Entre peur de prendre le volant, incapacité à conduire, et manque d’assistance, se déplacer hors de chez soi devient une véritable épreuve.</p>
+            <div class="cards-problematique">
+                <article>
+                    <h3>20%</h3>
+                    <p>Les seniors de 65 ans et plus représentent 20% des personnes tuées dans un accident de la route.</p>
+                </article>
+                <article>
+                    <h3>21%</h3>
+                    <p>21% des conducteurs présumés responsables d'accidents mortels sur les routes ont plus de 65 ans.</p>
+                </article>
+                <article>
+                    <h3>750 000</h3>
+                    <p>Le nombre de personnes âgées en situation d’isolement social complet s’élève à 750 000 en France.</p>
+                </article>
+            </div>
+        </section>
+        <section id="engagement">
+            <div class="cardBleuF"></div>
+            <div class="cardBleuC"></div>
+            <div class="cardBlanc">
+                <h2>Votre autonomie compte</h2>
+                <p>En quelques clics, voyagez simplement, confortablement et en toute sécurité.<p>
+                <a class="cta cta-principal" href="">Téléchargez gratuitement notre application</a>
+                
+            </div>
             
-        </div>
-        
-    </section>
+        </section>
+    </main>
 </body>
 </html>
