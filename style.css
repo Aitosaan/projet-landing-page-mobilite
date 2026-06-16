@@ -1,7 +1,8 @@
 :root {
-    --taille-nav: 80px;
+    --taille-nav: 100px;
+    --radius: 20px;
     --marges: 20px;
-    --separ-section: var(--marges) * 4;
+    --separ-section: 80px;
     --bleu-fonce: #0F0E48;
     --bleu-medium: #2A46E6;
     --blanc: #F7F8FC;
@@ -9,10 +10,10 @@
     --ombre-interne: 0 0 10px #00000025 inset;
     --police-principale: "Kufam", sans-serif;
     /* TO DO : utilise l'unité rem plutôt que em */
-    --titre-h1: 2em;
-    --titre-h2: 1.6em;
-    --titre-h3: 1.3em;
-    --texte: 1.1em;
+    --titre-h1: 2rem;
+    --titre-h2: 1.6rem;
+    --titre-h3: 1.2rem;
+    --texte: 18px;
 }
 
 * {
@@ -33,41 +34,69 @@ a {
     color: var(--bleu-medium);
 }
 
-.cta {
-    padding: calc(var(--marges) / 2) var(--marges);
-    box-shadow: var(--ombre-externe);
-    transition: .4s ease;
-}
-
-.cta:hover {
-    box-shadow: var(--ombre-interne);
-}
-
-.cta-principal {
-    background-color: var(--bleu-medium);
-    color: var(--blanc);
-}
-
-.cta-second {
-    background-color: var(--blanc);
-}
-
 /* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
 En mettant, header au dessus de toutes les classes spécifiques au header etc. */
 
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 780px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    #hero .container div:first-of-type {
+    width: 50vw;
+    }
+}
+
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
     width: 100vw;
-    height: var(--taille-nav);
+    max-width: 100%;
     padding: 0 var(--marges);
+    background-color: var(--blanc);
     box-shadow: var(--ombre-externe);
 }
 
 header * {
-    /* TO DO : c'est utile ça ? */
+    height: var(--taille-nav);
+}
+
+header nav {
     height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+/*header nav ul li {
+    height: 100%;
+}
+
+header nav ul li:not(:last-child) a {
+    height: 100%;
+}*/
+
+header nav ul li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li:last-child a {
+    display: flex;
+    align-items: center;
+    height: initial;
 }
 
 header img {
@@ -87,18 +116,53 @@ header nav ul li a {
     align-items: center;
 }
 
-.container {
-    margin: 0 auto;
-    width: 96vw;
+.cta {
+    position: relative;
+    display: inline-block;
+    padding: var(--marges);
+    box-shadow: var(--ombre-externe);
+    border-radius: var(--radius);
+    transition: ease .4s;
+}
+
+.cta:hover {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.cta-principal {
+    background-color: var(--bleu-medium);
+    color: var(--blanc);
+}
+
+.cta-second {
+    background-color: var(--blanc);
+}
+
+section {
+    padding: 80px 0;
 }
 
 #hero {
+    display: flex;
+    align-items: center;
     height: calc(100vh - var(--taille-nav));
+    background: url(assets/pexels-vladimirsrajber-interieur-vehicule.jpg) top / cover no-repeat;
+    color: var(--blanc);
+}
+
+.container {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+#hero .container div:last-of-type {
+    margin-top: var(--marges);
+    text-align: center;
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-weight: 700;
 }
 
@@ -108,10 +172,24 @@ h1 {
 
 h2 {
     font-size: var(--titre-h2);
+    margin-bottom: var(--marges);
 }
 
-/* TO DO : c'est pour tous les h3 du site ? */
-#problematique h3 {
+#problematique div {
+    justify-content: center;
+    gap: var(--marges);
+    margin-top: calc(var(--marges) * 2);
+}
+
+#problematique article {
+    width: calc(33% - var(--marges));
+    min-width: 250px;
+    text-align: center;
+}
+
+#problematique article p:first-of-type {
     font-size: 3em;
+    font-weight: 700;
+    color: var(--bleu-medium);
 }
 
