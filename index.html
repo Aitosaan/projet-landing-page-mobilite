@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <title>Projet Mobilité</title>
     <!-- TO DO : ajouter une image dans l'onglet -->
 </head>
+
 <body>
     <header>
         <!-- TO DO : les noms des assets doivent être écrits en camelCase -->
-        <img
-            alt="Logo SerenIA"
-            src="assets/SerenIA-logo.png" />
+        <img alt="Logo SerenIA" src="assets/SerenIA-logo.png" />
         <nav>
             <ul>
                 <li>
@@ -47,8 +49,9 @@
             </div>
         </div>  
     </section>
-    <main class="container">
+    <main>
         <!-- TO DO : aère ton code (tu peux sauter des lignes entre les sections et avec le header et le footer) -->
+        <!-- Section problematique -->
         <section id="problematique">
             <h2>L’âge a un impact sur la mobilité</h2>
             <p>Avec l’âge et les problèmes de santé qui peuvent en découler, les personnes âgées rencontrent hélas des obstacles dans leur autonomie de tous les jours. Entre peur de prendre le volant, incapacité à conduire, et manque d’assistance, se déplacer hors de chez soi devient une véritable épreuve.</p>
@@ -67,18 +70,140 @@
                 </article>
             </div>
         </section>
-        <section id="engagement">
-            <!-- TO DO : nom des classes -->
-            <div class="cardBleuF"></div>
-            <div class="cardBleuC"></div>
-            <div class="cardBlanc">
-                <h2>Votre autonomie compte</h2>
-                <p>En quelques clics, voyagez simplement, confortablement et en toute sécurité.<p>
-                <a class="cta cta-principal" href="">Téléchargez gratuitement notre application</a>
-                <a>Plus d’infos</a>
+        <!-- Section Solution -->
+
+        <section id="solution">
+            <div class="container">
+                <h2>Notre solution : une application mobile simple et intuitive</h2>
+                <p>Notre application mobile a été conçue pour répondre aux besoins des seniors et de leurs proches. Elle
+                    permet de réserver facilement un trajet en voiture autonome, en toute sécurité, et de manière
+                    totalement autonome.</p>
+                <div class="cardContainer">
+                    <article class="card">
+                        <img src="assets/iconeSimplicite.png">
+                        <h3>Simplicité</h3>
+                        <p>Une interface claire et intuitive, pensée pour les seniors.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/iconeFiabilite.png">
+                        <h3>Fiabilité</h3>
+                        <p>Un service de transport sûr et ponctuel, pour des trajets sans stress.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/iconeAutonomie.png">
+                        <h3>Autonomie</h3>
+                        <p>La possibilité de se déplacer librement, sans dépendre d’autrui.</p>
+                    </article>
+                </div>
             </div>
-            
         </section>
+
+        <!-- Section bénéfices -->
+        <section id="benefices">
+            <div class="container">
+                <h2>Les bénéfices pour les seniors et leurs proches</h2>
+                <div class="cardContainer">
+                    <article class="card">
+                        <img src="assets/iconeSecurite.png">
+                        <h3>Sécurité</h3>
+                        <p>Des trajets en voiture autonome, sans risque d’accident lié à la conduite.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/iconeConfort.png">
+                        <h3>Confort</h3>
+                        <p>Un service de transport agréable, avec des véhicules adaptés aux besoins des seniors.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/iconeIndependance.png">
+                        <h3>Indépendance</h3>
+                        <p>La possibilité de se déplacer librement, sans dépendre d’autrui.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- TO DO : au moins mettre un commentaire pour dire quelle section est à propos de quoi ? -->
+
+        <!-- Section Temoignages -->
+        <section id="preuve">
+            <div class="container">
+                <h2>Les avis de nos cliens</h2>
+                <div class="cardContainer">
+                    <article class="card">
+                        <p>“J’avais peur de ne pas comprendre l’application, mais tout est simple et très lisible. Je
+                            peux
+                            réserver un trajet sans aide.”</p>
+                        <img src="femmeAge.jpg">
+                        <h3>Martine, 74 ans</h3>
+                    </article>
+                    <article class="card">
+                        <p>“Ma mère se sent beaucoup plus sereine pour aller à ses rendez-vous. L’interface est claire,
+                            et
+                            elle sait qu’elle peut compter sur un service fiable.”</p>
+                        <img src="femmejeune.jpg">
+                        <h3>Claire, fille d’utilisatrice</h3>
+                    </article>
+                    <article class="card">
+                        <p>“Ce que j’apprécie le plus, c’est de pouvoir me déplacer sans dépendre systématiquement de
+                            quelqu’un.”</p>
+                        <img src="hommeAge.jpg">
+                        <h3>Jean, 79 ans</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section partenaires -->
+        <section id="partenaires">
+            <h2>Nos partenaires de confiance</h2>
+            <p>Nous collaborons avec des acteurs engagés dans la mobilité et l’autonomie des seniors : collectivités
+                locales, associations, structures d’aide et partenaires de mobilité. Leur soutien confirme la fiabilité
+                de notre application, son utilité pour les déplacements du quotidien, et sa capacité à rassurer à la
+                fois les utilisateurs et leurs proches.</p>
+            <div class="logoPartenaire">
+                <img src="assets/logoRépubliqueFrançaise.jpg">
+                <img src="assets/LogoMouvess.png">
+                <img src="assets/logoIhemru.png">
+                <img src="assets/LogoMouvementImpactFrance.png">
+                <img src="assets/logoLaboratoire.png">
+            </div>
+        </section>
+        <!-- Section Engagement -->
+        <section id="engagement">
+            <div class="container">
+                <h2>Notre engagement pour l’autonomie des seniors</h2>
+                <p>Nous nous engageons à offrir un service de transport autonome qui favorise l’autonomie et la mobilité
+                    des seniors. Notre application est conçue pour être accessible, fiable et sécurisée, afin que chaque
+                    utilisateur puisse se déplacer en toute confiance.</p>
+                <!-- TO DO : nom des classes -->
+                <div class="cardContainer">
+
+                    <div class="cardBleuF"></div>
+                    <div class="cardBleuC"></div>
+                    <div class="cardBlanc">
+                        <h2>Votre autonomie compte</h2>
+                        <p>En quelques clics, voyagez simplement, confortablement et en toute sécurité.
+                        <p>
+                            <a class="cta cta-principal" href="">Téléchargez gratuitement notre application</a>
+                            <a>Plus d’infos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <p>© 2024 SerenIA. Tous droits réservés.</p>
+                <nav>
+                    <ul>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">Politique de confidentialité</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
     </main>
 </body>
+
 </html>

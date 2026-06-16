@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --taille-nav: 100px;
     --radius: 20px;
@@ -15,12 +16,27 @@
     --titre-h3: 1.2rem;
     --texte: 18px;
 }
-
+/* Reinitialisation */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* Boites */
+section {
+    padding: 80px 24px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* Style Global */
 
 body {
     background-color: var(--blanc);
@@ -28,10 +44,43 @@ body {
     font-size: var(--texte);
     color: var(--bleu-fonce);
 }
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    Line-height: 1.2;
+}
 
+h1 {
+    font-size: var(--titre-h1);
+    margin-bottom: var(--marges);
+}
+
+h2 {
+    font-size: var(--titre-h2);
+    margin-bottom: var(--marges);
+}
+
+/* boutons, liens */
 a {
     text-decoration: none;
     color: var(--bleu-medium);
+}
+
+/* Cards */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--marges);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 320px;
+    box-shadow: var(--ombre-externe);
+    padding: var(--marges);
+    transition: .4s ease;
 }
 
 /* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
@@ -53,6 +102,7 @@ En mettant, header au dessus de toutes les classes spécifiques au header etc. *
     }
 }
 
+/* header */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +193,7 @@ section {
     padding: 80px 0;
 }
 
+/* Hero section */
 #hero {
     display: flex;
     align-items: center;
@@ -193,3 +244,6 @@ h2 {
     color: var(--bleu-medium);
 }
 
+.logoPartenaire{
+   
+}
