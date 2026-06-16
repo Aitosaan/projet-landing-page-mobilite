@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --taille-nav: 80px;
     --marges: 20px;
@@ -14,12 +15,23 @@
     --titre-h3: 1.3em;
     --texte: 1.1em;
 }
-
+/* Reinitialisation */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* Boites */
+section {
+    padding: var(--separ-section) 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* Style Global */
 
 body {
     background-color: var(--blanc);
@@ -27,12 +39,28 @@ body {
     font-size: var(--texte);
     color: var(--bleu-fonce);
 }
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    Line-height: 1.2;
+}
 
+h1 {
+    font-size: var(--titre-h1);
+    margin-bottom: var(--marges);
+}
+
+h2 {
+    font-size: var(--titre-h2);
+    margin-bottom: var(--marges);
+}
+
+/* boutons, liens */
 a {
     text-decoration: none;
     color: var(--bleu-medium);
 }
-
 .cta {
     padding: calc(var(--marges) / 2) var(--marges);
     box-shadow: var(--ombre-externe);
@@ -52,9 +80,24 @@ a {
     background-color: var(--blanc);
 }
 
+/* Cards */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--marges);
+}
+.card {
+    flex: 1 1 320px;
+    box-shadow: var(--ombre-externe);
+    padding: var(--marges);
+    transition: .4s ease;
+}
+
 /* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
 En mettant, header au dessus de toutes les classes spécifiques au header etc. */
 
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -87,27 +130,9 @@ header nav ul li a {
     align-items: center;
 }
 
-.container {
-    margin: 0 auto;
-    width: 96vw;
-}
-
+/* Hero section */
 #hero {
     height: calc(100vh - var(--taille-nav));
-}
-
-h1,
-h2,
-h3 {
-    font-weight: 700;
-}
-
-h1 {
-    font-size: var(--titre-h1);
-}
-
-h2 {
-    font-size: var(--titre-h2);
 }
 
 /* TO DO : c'est pour tous les h3 du site ? */
