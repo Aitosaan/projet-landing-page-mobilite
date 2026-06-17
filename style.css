@@ -48,7 +48,7 @@ h1,
 h2,
 h3 {
     font-weight: 700;
-    Line-height: 1.2;
+    line-height: 1.2;
 }
 
 h1 {
@@ -78,7 +78,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 1 1 320px;
-    box-shadow: var(--ombre-externe);
+    /* box-shadow: var(--ombre-externe); */
     padding: var(--marges);
     transition: .4s ease;
 }
@@ -189,10 +189,6 @@ header nav ul li a {
     background-color: var(--blanc);
 }
 
-section {
-    padding: 80px 0;
-}
-
 /* Hero section */
 #hero {
     display: flex;
@@ -202,29 +198,16 @@ section {
     color: var(--blanc);
 }
 
-.container {
-    margin: 0 auto;
-    width: 90vw;
-}
-
 #hero .container div:last-of-type {
     margin-top: var(--marges);
     text-align: center;
 }
 
-h1,
-h2 {
-    font-weight: 700;
-}
 
-h1 {
-    font-size: var(--titre-h1);
-}
+/*solution*/
 
-h2 {
-    font-size: var(--titre-h2);
-    margin-bottom: var(--marges);
-}
+
+/*problematique*/
 
 #problematique div {
     justify-content: center;
@@ -244,6 +227,3 @@ h2 {
     color: var(--bleu-medium);
 }
 
-.logoPartenaire{
-   
-}
