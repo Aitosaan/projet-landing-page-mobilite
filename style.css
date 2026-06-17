@@ -97,14 +97,17 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--marges);
+  
 }
 .card {
     display: flex;
     flex-direction: column;
     flex: 1 1 320px;
+    align-items: center;
     /* box-shadow: var(--ombre-externe); */
     padding: var(--marges);
     transition: .4s ease;
+   
 }
 
 /* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
@@ -204,13 +207,6 @@ header nav ul li a {
     text-align: center;
 }
 
-
-/*solution*/
-.card img{
-   height:200px ; 
-   width: 150px;
-}
-
 /*problematique*/
 
 #problematique div {
@@ -231,3 +227,31 @@ header nav ul li a {
     color: var(--bleu-medium);
 }
 
+
+/*solution*/
+/* #solution .card img{
+   height:140px ; 
+   width: 150px;
+} */
+
+#solution .card img {
+   width: 100%;
+   
+}
+
+/* partenaires */
+
+#partenaires img {
+    width: 200px;
+}
+
+#partenaires .logoPartenaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*documentation*/
+.Documentation p {
+    max-width: 200px;
+}
