@@ -14,20 +14,27 @@
 <body>
     <header>
         <!-- TO DO : les noms des assets doivent être écrits en camelCase -->
-        <img alt="Logo SerenIA" src="assets/SerenIA-logo.png" />
+        <a href="index.html">
+            <img
+                alt="Logo SerenIA"
+                src="assets/sereniaLogo.png" />
+        </a>
         <nav>
             <ul>
                 <li>
-                    <a href="">Vos difficultés</a>
+                    <a href="#problematique">Vos difficultés</a>
                 </li>
                 <li>
-                    <a href="">Notre solution</a>
+                    <a href="#solution">Notre solution</a>
                 </li>
                 <li>
-                    <a href="">Les bénéfices</a>
+                    <a href="#benefices">Les bénéfices</a>
                 </li>
                 <li>
-                    <a href="">Vos avis</a>
+                    <a href="#preuve">Vos avis</a>
+                </li>
+                <li>
+                    <a href="documentation.html">Documentation</a>
                 </li>
                 <li>
                     <a class="cta cta-principal" href="">Téléchargez l’app</a>
@@ -35,21 +42,7 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- <div class="divDoc">
-        <h1>1. Introduction au projet</h1>
-        <p>Objectif : Créer une application qui facilite le déplacement des personnes âgées pour leur trajet du quotidient. Contenu : Notre projet est une application de voiture autonome pour les personnes âgées. Simplifier le déplacement des personnes âgées pour leur course habituelle.</p>
-        <h2>2. La cible → QUI ? </h2>
-        <p>Contenu : Notre application est destinée aux personnes âgées qui ont des sorties à faire au quotidien mais qui ne peuvent pas se déplacer facilement, ainsi qu'aux personnes à mobilité réduite. Elle leur permet de réserver un véhicule autonome adapté à leurs besoins afin de se rendre à leurs rendez-vous, faire leurs courses ou rendre visite à leurs proches en toute simplicité et sécurité.</p>
-        <p>Exemple de persona :Nom : Martin 69 ans Retraitée, ancienne comptable Besoins : Être capable d'aller chercher ses deux petits-enfants (6 et 12 ans) à l'école à Lyon en toute sécurité lorsque les parents sont débordés. Problématique :  Baisse de la vue : Elle porte d'épaisses lunettes et a dû arrêter de conduire à cause de cela. Elle a besoin d'une application lisible pour commander et identifier le véhicule qui arrive.</p>
-        <h2>3. Le contexte → POURQUOI ?</h2>
-        <ul>
-            <li>En France, environ 16,4 % des personnes âgées (75 ans ou plus) sont en perte d’autonomie, ce qui représente une préoccupation croissante pour leur mobilité.<br> De plus, 30 % des personnes âgées de 65 ans et plus déclarent avoir des difficultés à marcher trois pâtés de maisons.</li>
-            <li>Les contraintes identifiées sont techniques, financières, temporelles .</li>
-        </ul>
-        <h2>4. Le service → COMMENT ?</h2>
-        <p>Un parcours utilisateur : Situation initiale : L'utilisateur lance l'application. Étape 1 : Choix de la destination; Étape 2 : Choix des options(points d’arrêt …); Étape 3: Choisir jour et heure du trajet; Étape 4: Affichage du prix et du temps d'attente; Étape 5: L'application indique quel véhicule arrive et dans combien de temps.; Étape 6: L'utilisateur monte dans le véhicule autonome; Étape 7: Possibilité de changer les points d’arrêt. Situation finale : L’utilisateur arrive à destination.</p>
-        </div>  -->
+    <main class="documentation">
         <section>
             <div class="container">
                 <h1>1. Introduction au projet</h1>
@@ -57,20 +50,75 @@
             </div>
         </section>
         <section>
-            <div class="container"></div>
+            <div class="container">
+                <h2>2. La cible → QUI ? </h2>
+                <p>Contenu : Notre application est destinée aux personnes âgées qui ont des sorties à faire au quotidien mais qui ne peuvent pas se déplacer facilement, ainsi qu'aux personnes à mobilité réduite. Elle leur permet de réserver un véhicule autonome adapté à leurs besoins afin de se rendre à leurs rendez-vous, faire leurs courses ou rendre visite à leurs proches en toute simplicité et sécurité.</p>
+                <div class="imgpersona">
+                <img src="assets/personaGilbert.svg" class="imgGilbert">
+                <img src="assets/personaMartine.svg" class="imgMartine"></div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="container">
+         <h2>3. Le contexte → POURQUOI ?</h2>
+        <ul>
+            <li>En France, environ 16,4 % des personnes âgées (75 ans ou plus) sont en perte d’autonomie, ce qui représente une préoccupation croissante pour leur mobilité.<br> De plus, 30 % des personnes âgées de 65 ans et plus déclarent avoir des difficultés à marcher trois pâtés de maisons.</li>
+            <li>Les contraintes identifiées sont techniques, financières, temporelles .</li>
+        </ul>   
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>4. Le service → COMMENT ?</h2>
+        <p>Un parcours utilisateur : Situation initiale : L'utilisateur lance l'application. Étape 1 : Choix de la destination; Étape 2 : Choix des options(points d’arrêt …); Étape 3: Choisir jour et heure du trajet; Étape 4: Affichage du prix et du temps d'attente; Étape 5: L'application indique quel véhicule arrive et dans combien de temps.; Étape 6: L'utilisateur monte dans le véhicule autonome; Étape 7: Possibilité de changer les points d’arrêt. Situation finale : L’utilisateur arrive à destination.</p>
+            <img src="assets/userFlow.svg" class="imgFlow">
+        </div>
         </section>
     </main>
     <footer>
-        <div class="container">
-        <p>© 2024 SerenIA. Tous droits réservés.</p>
-            <nav>
-                <ul>
-                    <li><a href="">Mentions légales</a></li>
-                    <li><a href="">Politique de confidentialité</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+            <div class="container">
+                <div>
+                    <h2>Suivez notre actualité</h2>
+                    <div>
+                        <h3>Nos réseaux sociaux</h3>
+                        <a href="">
+                            <img
+                                alt="facebook"
+                                src="assets/facebook.png"/>
+                        </a>
+                        <a href="">
+                            <img
+                                alt=""
+                                src="assets/instagram.png"/>
+                        </a>
+                        <a href="">
+                            <img
+                                alt=""
+                                src="assets/linkedin.png"/>
+                        </a>
+                    </div>
+                    <form>
+                        <label for="newsletter">Recevez notre newsletter</label>
+                        <input
+                            type="text"
+                            id="newsletter"
+                            name="newsletter"
+                            placeholder="Votre adresse mail" />
+                        <button>S'abonner</button>
+                    </form>
+                </div>
+                <div>
+                    <p>© 2024 SerenIA. Tous droits réservés.</p>
+                    <nav>
+                        <ul>
+                            <li><a href="">Mentions légales</a></li>
+                            <li><a href="">Politique de confidentialité</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>
