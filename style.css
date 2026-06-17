@@ -110,6 +110,13 @@ a {
    
 }
 
+.card img {
+    margin: var(--marges);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 /* TO DO : mettre des commentaires pour séparer le style des différentes parties. 
 En mettant, header au dessus de toutes les classes spécifiques au header etc. */
 
@@ -227,17 +234,15 @@ header nav ul li a {
     color: var(--bleu-medium);
 }
 
+/* solution */
 
-/*solution*/
-/* #solution .card img{
-   height:140px ; 
-   width: 150px;
-} */
-
-#solution .card img {
-   width: 100%;
-   
+#solution .card:nth-of-type(2) img {
+    object-position: center 20%;
 }
+
+/* preuves */
+
+
 
 /* partenaires */
 
@@ -252,6 +257,9 @@ header nav ul li a {
 }
 
 /*documentation*/
-.Documentation p {
-    max-width: 200px;
+.Divdoc {
+    margin: 20px;
+    align-items: center;
+    max-width: 1000px;
+    
 }
