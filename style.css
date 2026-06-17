@@ -15,6 +15,7 @@
     --titre-h2: 1.6rem;
     --titre-h3: 1.2rem;
     --texte: 18px;
+    --img-preuves: 80px;
 }
 /* Reinitialisation */
 * {
@@ -62,6 +63,10 @@ h2 {
     margin-bottom: var(--marges);
 }
 
+img {
+    border-radius: 20px;
+}
+
 /* boutons, liens */
 a {
     text-decoration: none;
@@ -89,7 +94,9 @@ a {
 
 .cta-second {
     background-color: var(--blanc);
+    border : 1px solid #00000025;
 }
+
 
 /* Cards */
 .cardContainer {
@@ -97,6 +104,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: var(--marges);
+    margin-top: calc(var(--marges) * 2);
   
 }
 .card {
@@ -152,6 +160,14 @@ header {
 
 header * {
     height: var(--taille-nav);
+}
+
+header > a {
+    height: initial;
+}
+
+header img {
+    border-radius: 0;
 }
 
 header nav {
@@ -240,26 +256,106 @@ header nav ul li a {
     object-position: center 20%;
 }
 
+/* bénéfices */
+
+#benefices .container div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--marges);
+}
+
+#benefices img {
+    height: 240px;
+}
+
+#benefices ul{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    list-style: none;
+    text-align: left;
+}
+
 /* preuves */
 
+#preuve .card div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+#preuve img {
+    width: var(--img-preuves);
+    height: var(--img-preuves);
+    object-fit: cover;
+    border-radius: calc(var(--img-preuves) / 2);
+}
 
 /* partenaires */
 
 #partenaires img {
-    width: 200px;
+    max-width: 200px;
 }
 
 #partenaires .logoPartenaire {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: var(--marges);
+}
+
+/* engagement */
+
+#engagement img {
+    width: 350px;
+}
+
+#engagement .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--marges);
+    margin-top: calc(var(--marges) * 2);
+}
+
+#engagement .container > div div p {
+    margin-bottom: var(--marges);
+}
+
+/* footer */
+
+footer {
+    padding: var(--marges) 0;
+    background-color: var(--bleu-fonce);
+    color: var(--blanc);
+}
+
+footer .container div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--marges);
+    list-style-type: none;
+}
+
+footer a {
+    color: var(--blanc);
+    text-decoration: underline;
 }
 
 /*documentation*/
-.Divdoc {
+.divDoc {
     margin: 20px;
     align-items: center;
-    max-width: 1000px;
-    
+    max-width: 1300px;
+    justify-content: center;
 }
