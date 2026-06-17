@@ -68,6 +68,29 @@ a {
     color: var(--bleu-medium);
 }
 
+.cta {
+    position: relative;
+    display: inline-block;
+    padding: var(--marges);
+    box-shadow: var(--ombre-externe);
+    border-radius: var(--radius);
+    transition: ease .4s;
+}
+
+.cta:hover {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+.cta-principal {
+    background-color: var(--bleu-medium);
+    color: var(--blanc);
+}
+
+.cta-second {
+    background-color: var(--blanc);
+}
+
 /* Cards */
 .cardContainer {
     display: flex;
@@ -167,35 +190,12 @@ header nav ul li a {
     align-items: center;
 }
 
-.cta {
-    position: relative;
-    display: inline-block;
-    padding: var(--marges);
-    box-shadow: var(--ombre-externe);
-    border-radius: var(--radius);
-    transition: ease .4s;
-}
-
-.cta:hover {
-    box-shadow: none;
-    transform: translateY(2px);
-}
-
-.cta-principal {
-    background-color: var(--bleu-medium);
-    color: var(--blanc);
-}
-
-.cta-second {
-    background-color: var(--blanc);
-}
-
 /* Hero section */
 #hero {
     display: flex;
     align-items: center;
     height: calc(100vh - var(--taille-nav));
-    background: url(assets/pexels-vladimirsrajber-interieur-vehicule.jpg) top / cover no-repeat;
+    background: url(assets/vladimirsrajberInterieurVehicule.jpg) top / cover no-repeat;
     color: var(--blanc);
 }
 
@@ -206,7 +206,10 @@ header nav ul li a {
 
 
 /*solution*/
-
+.card img{
+   height:200px ; 
+   width: 150px;
+}
 
 /*problematique*/
 
@@ -216,11 +219,11 @@ header nav ul li a {
     margin-top: calc(var(--marges) * 2);
 }
 
-#problematique article {
+/*#problematique article {
     width: calc(33% - var(--marges));
     min-width: 250px;
     text-align: center;
-}
+}*/
 
 #problematique article p:first-of-type {
     font-size: 3em;
