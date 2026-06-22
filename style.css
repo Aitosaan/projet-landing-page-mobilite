@@ -123,6 +123,10 @@ a {
    
 }
 
+.card:nth-of-type(odd) {
+    background-color:#2A46E625;
+}
+
 .card img {
     margin: var(--marges);
     width: 100%;
@@ -280,6 +284,7 @@ header nav ul li a {
     flex-direction: column;
     gap: 17px;
     list-style: none;
+    list-style-type: "🗸";
     text-align: left;
 }
 
