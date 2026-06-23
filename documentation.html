@@ -33,9 +33,9 @@
                 <li>
                     <a href="#preuve">Vos avis</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="documentation.html">Documentation</a>
-                </li>
+                </li> -->
                 <li>
                     <a class="cta cta-principal" href="">Téléchargez l’app</a>
                 </li>
@@ -45,8 +45,14 @@
     <main class="documentation">
         <section>
             <div class="container">
-                <h1>1. Introduction au projet</h1>
-                <p>Objectif : Créer une application qui facilite le déplacement des personnes âgées pour leur trajet du quotidient. Contenu : Notre projet est une application de voiture autonome pour les personnes âgées. Simplifier le déplacement des personnes âgées pour leur course habituelle.</p>
+                <h1>Documentation projet - Les mobilités alternatives</h1> 
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2>1. Introduction au projet</h2>
+                <p>Objectif : Créer une application qui facilite le déplacement des personnes âgées pour leur trajet du quotidien.</p>
+                <p>Notre projet est une application de voiture autonome pour les personnes âgées. Simplifier le déplacement des personnes âgées pour leur course habituelle.</p>
             </div>
         </section>
         <section>
@@ -61,18 +67,66 @@
         <section>
             <div class="container">
                 <h2>3. Le contexte → POURQUOI ?</h2>
-                <p>En France, environ 16,4 % des personnes âgées (75 ans ou plus) sont en perte d’autonomie, ce qui représente une préoccupation croissante pour leur mobilité.</p>
-                <p> De plus, 30 % des personnes âgées de 65 ans et plus déclarent avoir des difficultés à marcher trois pâtés de maisons.</p>
-                <p>Les contraintes identifiées sont techniques, financières, temporelles .</p>  
+                <ul>
+                    <li>En France, environ 16,4% des personnes âgées (75 ans ou plus) sont en perte d’autonomie, ce qui représente une préoccupation croissante pour leur mobilité.</li>
+                    <li>De plus, 30 % des personnes âgées de 65 ans et plus déclarent avoir des difficultés à marcher trois pâtés de maisons.</li>
+                    <li>Les contraintes identifiées sont techniques, financières, temporelles.</li>  
+                </ul>
             </div>
         </section>
         <section>
             <div class="container">
                 <h2>4. Le service → COMMENT ?</h2>
-                <p>Un parcours utilisateur : Situation initiale : L'utilisateur lance l'application. Étape 1 : Choix de la destination; Étape 2 : Choix des options(points d’arrêt …); Étape 3: Choisir jour et heure du trajet; Étape 4: Affichage du prix et du temps d'attente; Étape 5: L'application indique quel véhicule arrive et dans combien de temps.; Étape 6: L'utilisateur monte dans le véhicule autonome; Étape 7: Possibilité de changer les points d’arrêt. Situation finale : L’utilisateur arrive à destination.</p>
-                <img src="assets/userFlow.svg" class="imgFlow">
+                <h3>Un parcours utilisateur</h3>
+                <ol>
+                    <li>Situation initiale : l'utilisateur lance l'application.</li>
+                    <li>Choix de la destination</li>
+                    <li>Choix des options (points d’arrêt…)</li>
+                    <li>Choisir jour et heure du trajet</li>
+                    <li>L'application indique quel véhicule arrive et dans combien de temps</li>
+                    <li>L'utilisateur monte dans le véhicule autonome</li>
+                    <li>Possibilité de changer les points d’arrêt</li>
+                    <li>Situation finale : l’utilisateur arrive à destination</li>
+                </ol>
+                <img
+                    alt="user flow"
+                    src="assets/userFlow.svg"
+                    class="imgFlow" />
+                <h3>Fonctionnalité de création d'un trajet aller-retour</h3>
+                <ol>
+                    <li>Entrer le point de départ et d'arrivée</li>
+                    <li>Ajouter des point d'arrêt au trajet</li>
+                    <li>Paramétrer la date de départ</li>
+                    <li>Recevoir une notification à l'arrivée du véhicule</li>
+                    <li>Monter dans la voiture et démarrer le trajet</li>
+                    <li>Laisser la voiture vous transporter à vos points d'arrêt</li>
+                    <li>Revenir au point de départ et recevoir un récapitulatif du trajet effectué</li>
+                </ol>
+                <img
+                    alt="flow du trajet utilisateur"
+                    src="assets/autoFlowTrajet.svg"/>
+                <h3>Fonctionnalité d'arrêt d'urgence</h3>
+                <ol>
+                    <li>Appuyer en cours de trajet sur le bouton d'arrêt d'urgence</li>
+                    <li>Choisir d'être emmené à l'hôpital, ou choisir de s'arrêter à une place sécurisée proche</li>
+                </ol>
+                <img
+                    alt="flow d'arrêt d'urgence"
+                    src="assets/autoFlowArret.svg"/>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <h2>5. Le prototype</h2>
+                <iframe
+                    style="border: 1px solid rgba(0, 0, 0, 0.1);"
+                    width="393"
+                    height="852"
+                    src="https://embed.figma.com/proto/Xr9dTKSra6gxEOcTUjQX7q/ProjetMobilite?node-id=356-2272&p=f&scaling=scale-down&content-scaling=responsive&page-id=1%3A3&starting-point-node-id=356%3A2272&embed-host=share%22"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>  
     </main>
     <footer>
             <div class="container">

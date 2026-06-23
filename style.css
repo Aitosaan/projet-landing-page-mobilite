@@ -263,7 +263,7 @@ header nav ul li a {
 /* solution */
 
 #solution .card:nth-of-type(2) img {
-    object-position: center 20%;
+    object-position: center bottom;
 }
 
 /* bénéfices */
@@ -316,6 +316,7 @@ header nav ul li a {
     align-items: center;
     gap: var(--marges);
     margin-top: calc(var(--marges) * 2);
+    background-color: #2A46E625;
 }
 
 /* engagement */
@@ -437,16 +438,25 @@ footer ul {
 
 /*documentation*/
 
+.documentation h3 {
+    margin-top: calc(var(--marges) * 2);
+    margin-bottom: var(--marges);
+}
+
 .documentation p,
 .documentation li {
     text-align: left;
+}
+
+.documentation img {
+    max-width: 100%;
 }
 
 .imgGilbert,
 .imgMartine{
     height: 300px;
     width: auto;
-    margin: 25px;
+    margin: var(--marges);
 }
 .imgFlow{
     height: 1550px;
@@ -456,3 +466,4 @@ footer ul {
     display: flex;
     flex-direction: row;
 }
+
