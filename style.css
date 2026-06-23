@@ -24,7 +24,7 @@
 }
 
 /* Boites */
-section {
+section:not(#hero) {
     padding: 80px 24px;
 }
 .container {
@@ -120,6 +120,7 @@ a {
     align-items: center;
     padding: var(--marges);
     transition: .4s ease;
+    border-radius: var(--marges);
    
 }
 
@@ -235,6 +236,12 @@ header nav ul li a {
     text-shadow: 0 0 10px #000000, 0 0 10px #000000;
 }
 
+#hero .container {
+    max-width: none;
+    padding: var(--marges);
+    background-color:#00000090;
+}
+
 #hero .container div:last-of-type {
     margin-top: var(--marges);
     text-align: center;
@@ -275,17 +282,26 @@ header nav ul li a {
 }
 
 #benefices img {
-    height: 240px;
+    height: 420px;
 }
 
 #benefices ul{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    list-style: none;
+    gap: var(--marges);
+    list-style: inside;
     list-style-type: "🗸";
     text-align: left;
+}
+
+#benefices li {
+    padding: var(--marges);
+    border-radius: var(--marges);
+}
+
+#benefices li:nth-of-type(odd) {
+    background-color: #2A46E625;
 }
 
 /* preuves */
