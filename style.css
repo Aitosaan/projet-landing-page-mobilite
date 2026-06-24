@@ -319,7 +319,7 @@ header nav ul li a {
     flex-direction: column;
     gap: var(--marges);
     list-style: inside;
-    list-style-type: "🗸";
+    list-style-type: "\01F5F8";
     text-align: left;
 }
 
