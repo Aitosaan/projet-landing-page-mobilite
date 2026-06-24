@@ -10,10 +10,11 @@
     --ombre-interne: 0 0 10px #00000060 inset;
     --police-principale: "Kufam", sans-serif;
     /* TO DO : utilise l'unité rem plutôt que em */
-    --titre-h1: 2rem;
-    --titre-h2: 1.6rem;
-    --titre-h3: 1.2rem;
-    --texte: 18px;
+    --titre-h1: 65px;
+    --titre-h2: 54px;
+    --titre-h3: 32px;
+    --texte: 22px;
+    --texte-large: 26px;
     --img-preuves: 80px;
 }
 /* Reinitialisation */
@@ -22,10 +23,14 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+    font-size: 22px;
+    text-wrap-style: balance;
+}
 /* Boites */
 section:not(#hero) {
-    padding: 120px 24px 40px 24px;
+    padding: 160px 24px 0px 24px;
 }
 .container {
     display: flex;
@@ -42,8 +47,9 @@ section:not(#hero) {
 body {
     background-color: var(--blanc);
     font-family: var(--police-principale);
-    font-size: var(--texte);
     color: var(--bleu-fonce);
+    font-weight: 500;
+    line-height: 1.6;
 }
 h1,
 h2,
@@ -54,8 +60,10 @@ h3 {
 
 h1 {
     font-size: var(--titre-h1);
-    margin-bottom: var(--marges);
-    text-shadow: 0 0 10x #000000, 0 0 10px #000000;
+    margin-bottom: 24px;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+    /* text-shadow: 0 0 10x #000000, 0 0 10px #000000; */
 }
 
 h2 {
@@ -76,19 +84,20 @@ img {
 a {
     text-decoration: none;
     color: var(--bleu-medium);
+    font-size: 20px;
 }
 
 .cta {
     position: relative;
     display: inline-block;
-    padding: var(--marges);
-    box-shadow: var(--ombre-externe);
+    padding: 15px 40px;
+    /* box-shadow: var(--ombre-externe); */
     border-radius: var(--radius);
     transition: ease .4s;
 }
 
 .cta:hover {
-    box-shadow: none;
+    /* box-shadow: none; */
     transform: translateY(2px);
 }
 
@@ -99,8 +108,13 @@ a {
 
 .cta-second {
     background-color: var(--blanc);
-    border : 1px solid #00000025;
+    border : 1px solid var(--bleu-medium);
 }
+/* .ghost{
+    background-color: transparent;
+    border: 1px solid var(--bleu-medium);
+    color: var(--bleu-medium);
+} */
 
 
 /* Cards */
@@ -146,9 +160,9 @@ a {
         top: 0;
     }
 
-    #hero .container div:first-of-type {
-    width: 50vw;
-    }
+    /*#hero .container div:first-of-type {
+     width: 50vw;
+    } */
 }
 
 /* header */
@@ -163,6 +177,16 @@ header {
     padding: 0 var(--marges);
     background-color: var(--blanc);
     box-shadow: var(--ombre-externe);
+}
+header > div {
+    display: flex;
+    align-items: center;
+    gap: var(--marges);
+
+    a{
+            display: flex;
+    align-items: center;
+    }
 }
 
 header * {
@@ -228,24 +252,28 @@ header nav ul li a {
     display: flex;
     align-items: center;
     height: calc(100vh - var(--taille-nav));
-    background: url(assets/vladimirsrajberInterieurVehicule.jpg) top / cover no-repeat;
-    color: var(--blanc);
+    background: left / cover no-repeat url(assets/ageeAutonome.png);
+    color: var(--bleu-fonce);
+}
+#hero .container {
+    margin-top:-64px;
+    max-width: 1440px;
+    /* padding: var(--marges); */
+    /* background-color:#00000090; */
 }
 
 #hero p {
-    text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+    font-size: var(--texte-large);    
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 64px;
 }
 
-#hero .container {
-    max-width: none;
-    padding: var(--marges);
-    background-color:#00000090;
-}
-
+/* 
 #hero .container div:last-of-type {
     margin-top: var(--marges);
     text-align: center;
-}
+} */
 
 /*problematique*/
 
@@ -337,6 +365,9 @@ header nav ul li a {
 
 /* engagement */
 
+section#engagement{
+    padding-bottom: 160px;
+}
 #engagement img {
     width: 350px;
 }
